@@ -11,6 +11,15 @@
 		A73147BF283A3F56002EA525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73147BE283A3F56002EA525 /* ViewController.swift */; };
 		A73147C1283A3F57002EA525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73147C0283A3F57002EA525 /* Assets.xcassets */; };
 		A73147C4283A3F57002EA525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73147C2283A3F57002EA525 /* Main.storyboard */; };
+		A73147DE283A65A0002EA525 /* GCXMulticastDNSKit in Frameworks */ = {isa = PBXBuildFile; productRef = A73147DD283A65A0002EA525 /* GCXMulticastDNSKit */; };
+		A73147E1283A6B9E002EA525 /* DNS in Frameworks */ = {isa = PBXBuildFile; productRef = A73147E0283A6B9E002EA525 /* DNS */; };
+		A73147E3283A7D23002EA525 /* MulticastDNSQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73147E2283A7D23002EA525 /* MulticastDNSQuery.swift */; };
+		A73147E8283ADF7D002EA525 /* ANLaunchService.m in Sources */ = {isa = PBXBuildFile; fileRef = A73147E7283ADF7D002EA525 /* ANLaunchService.m */; };
+		A73147EA283AE3D3002EA525 /* macModels.plist in Resources */ = {isa = PBXBuildFile; fileRef = A73147E9283AE3D3002EA525 /* macModels.plist */; };
+		A7D85386283BA23900283116 /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D85385283BA23900283116 /* NetService.swift */; };
+		A7D85389283BA2A900283116 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D85388283BA2A900283116 /* Device.swift */; };
+		A7D8538B283BACF600283116 /* iphoneModels.json in Resources */ = {isa = PBXBuildFile; fileRef = A7D8538A283BACF600283116 /* iphoneModels.json */; };
+		A7D8538D283BADAF00283116 /* MobileDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8538C283BADAF00283116 /* MobileDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,16 @@
 		A73147C0283A3F57002EA525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73147C3283A3F57002EA525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A73147C5283A3F57002EA525 /* AppleNetworkDevice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleNetworkDevice.entitlements; sourceTree = "<group>"; };
+		A73147CB283A40CD002EA525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73147E2283A7D23002EA525 /* MulticastDNSQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDNSQuery.swift; sourceTree = "<group>"; };
+		A73147E5283ADF7D002EA525 /* AppleNetworkDevice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleNetworkDevice-Bridging-Header.h"; sourceTree = "<group>"; };
+		A73147E6283ADF7D002EA525 /* ANLaunchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANLaunchService.h; sourceTree = "<group>"; };
+		A73147E7283ADF7D002EA525 /* ANLaunchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANLaunchService.m; sourceTree = "<group>"; };
+		A73147E9283AE3D3002EA525 /* macModels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macModels.plist; sourceTree = "<group>"; };
+		A7D85385283BA23900283116 /* NetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
+		A7D85388283BA2A900283116 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A7D8538A283BACF600283116 /* iphoneModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iphoneModels.json; sourceTree = "<group>"; };
+		A7D8538C283BADAF00283116 /* MobileDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73147E1283A6B9E002EA525 /* DNS in Frameworks */,
+				A73147DE283A65A0002EA525 /* GCXMulticastDNSKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +73,79 @@
 		A73147BB283A3F56002EA525 /* AppleNetworkDevice */ = {
 			isa = PBXGroup;
 			children = (
+				A73147CD283A55C4002EA525 /* Resources */,
+				A73147CC283A55BF002EA525 /* Sources */,
+			);
+			path = AppleNetworkDevice;
+			sourceTree = "<group>";
+		};
+		A73147CC283A55BF002EA525 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A7D85387283BA2A400283116 /* Models */,
+				A7D85384283BA22E00283116 /* Extension */,
+				A73147CF283A5630002EA525 /* Tools */,
+				A73147CE283A5629002EA525 /* Bootstrap */,
 				A73147BC283A3F56002EA525 /* AppDelegate.swift */,
 				A73147BE283A3F56002EA525 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A73147CD283A55C4002EA525 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A73147E9283AE3D3002EA525 /* macModels.plist */,
+				A7D8538A283BACF600283116 /* iphoneModels.json */,
+				A73147CB283A40CD002EA525 /* Info.plist */,
 				A73147C0283A3F57002EA525 /* Assets.xcassets */,
 				A73147C2283A3F57002EA525 /* Main.storyboard */,
 				A73147C5283A3F57002EA525 /* AppleNetworkDevice.entitlements */,
 			);
-			path = AppleNetworkDevice;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A73147CE283A5629002EA525 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		A73147CF283A5630002EA525 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A73147E4283ADF52002EA525 /* LaunchServicesPrivate */,
+				A73147E2283A7D23002EA525 /* MulticastDNSQuery.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A73147E4283ADF52002EA525 /* LaunchServicesPrivate */ = {
+			isa = PBXGroup;
+			children = (
+				A73147E6283ADF7D002EA525 /* ANLaunchService.h */,
+				A73147E7283ADF7D002EA525 /* ANLaunchService.m */,
+				A73147E5283ADF7D002EA525 /* AppleNetworkDevice-Bridging-Header.h */,
+			);
+			path = LaunchServicesPrivate;
+			sourceTree = "<group>";
+		};
+		A7D85384283BA22E00283116 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7D85385283BA23900283116 /* NetService.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7D85387283BA2A400283116 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7D85388283BA2A900283116 /* Device.swift */,
+				A7D8538C283BADAF00283116 /* MobileDevice.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +164,10 @@
 			dependencies = (
 			);
 			name = AppleNetworkDevice;
+			packageProductDependencies = (
+				A73147DD283A65A0002EA525 /* GCXMulticastDNSKit */,
+				A73147E0283A6B9E002EA525 /* DNS */,
+			);
 			productName = AppleNetworkDevice;
 			productReference = A73147B9283A3F56002EA525 /* AppleNetworkDevice.app */;
 			productType = "com.apple.product-type.application";
@@ -93,6 +184,7 @@
 				TargetAttributes = {
 					A73147B8283A3F56002EA525 = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -105,6 +197,10 @@
 				Base,
 			);
 			mainGroup = A73147B0283A3F56002EA525;
+			packageReferences = (
+				A73147DC283A65A0002EA525 /* XCRemoteSwiftPackageReference "GCXMulticastDNSKit" */,
+				A73147DF283A6B9E002EA525 /* XCRemoteSwiftPackageReference "DNS" */,
+			);
 			productRefGroup = A73147BA283A3F56002EA525 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,6 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D8538B283BACF600283116 /* iphoneModels.json in Resources */,
+				A73147EA283AE3D3002EA525 /* macModels.plist in Resources */,
 				A73147C1283A3F57002EA525 /* Assets.xcassets in Resources */,
 				A73147C4283A3F57002EA525 /* Main.storyboard in Resources */,
 			);
@@ -131,8 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73147E3283A7D23002EA525 /* MulticastDNSQuery.swift in Sources */,
+				A7D8538D283BADAF00283116 /* MobileDevice.swift in Sources */,
 				A73147BF283A3F56002EA525 /* ViewController.swift in Sources */,
+				A7D85386283BA23900283116 /* NetService.swift in Sources */,
+				A7D85389283BA2A900283116 /* Device.swift in Sources */,
 				A73147BD283A3F56002EA525 /* AppDelegate.swift in Sources */,
+				A73147E8283ADF7D002EA525 /* ANLaunchService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +371,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppleNetworkDevice/AppleNetworkDevice.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppleNetworkDevice/Resources/AppleNetworkDevice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8EX82NJP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppleNetworkDevice/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -282,10 +387,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.AppleNetworkDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppleNetworkDevice/Sources/Tools/LaunchServicesPrivate/AppleNetworkDevice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -295,13 +403,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppleNetworkDevice/AppleNetworkDevice.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppleNetworkDevice/Resources/AppleNetworkDevice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8EX82NJP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppleNetworkDevice/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -309,10 +419,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macpaw.AppleNetworkDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppleNetworkDevice/Sources/Tools/LaunchServicesPrivate/AppleNetworkDevice-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -339,6 +451,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A73147DC283A65A0002EA525 /* XCRemoteSwiftPackageReference "GCXMulticastDNSKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grandcentrix/GCXMulticastDNSKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A73147DF283A6B9E002EA525 /* XCRemoteSwiftPackageReference "DNS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Krivoblotsky/DNS";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A73147DD283A65A0002EA525 /* GCXMulticastDNSKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A73147DC283A65A0002EA525 /* XCRemoteSwiftPackageReference "GCXMulticastDNSKit" */;
+			productName = GCXMulticastDNSKit;
+		};
+		A73147E0283A6B9E002EA525 /* DNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A73147DF283A6B9E002EA525 /* XCRemoteSwiftPackageReference "DNS" */;
+			productName = DNS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A73147B1283A3F56002EA525 /* Project object */;
 }
