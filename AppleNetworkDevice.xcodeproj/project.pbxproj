@@ -20,6 +20,7 @@
 		A7D85389283BA2A900283116 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D85388283BA2A900283116 /* Device.swift */; };
 		A7D8538B283BACF600283116 /* iphoneModels.json in Resources */ = {isa = PBXBuildFile; fileRef = A7D8538A283BACF600283116 /* iphoneModels.json */; };
 		A7D8538D283BADAF00283116 /* MobileDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8538C283BADAF00283116 /* MobileDevice.swift */; };
+		A7D8538F283BD04D00283116 /* macVendors.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D8538E283BD04C00283116 /* macVendors.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A7D85388283BA2A900283116 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		A7D8538A283BACF600283116 /* iphoneModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iphoneModels.json; sourceTree = "<group>"; };
 		A7D8538C283BADAF00283116 /* MobileDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDevice.swift; sourceTree = "<group>"; };
+		A7D8538E283BD04C00283116 /* macVendors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = macVendors.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				A73147E9283AE3D3002EA525 /* macModels.plist */,
 				A7D8538A283BACF600283116 /* iphoneModels.json */,
+				A7D8538E283BD04C00283116 /* macVendors.plist */,
 				A73147CB283A40CD002EA525 /* Info.plist */,
 				A73147C0283A3F57002EA525 /* Assets.xcassets */,
 				A73147C2283A3F57002EA525 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 				A7D8538B283BACF600283116 /* iphoneModels.json in Resources */,
 				A73147EA283AE3D3002EA525 /* macModels.plist in Resources */,
 				A73147C1283A3F57002EA525 /* Assets.xcassets in Resources */,
+				A7D8538F283BD04D00283116 /* macVendors.plist in Resources */,
 				A73147C4283A3F57002EA525 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
