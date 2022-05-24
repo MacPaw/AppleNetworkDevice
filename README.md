@@ -6,3 +6,4 @@ This repository contains the prototype that demonstrates how to obtain possible 
 ## Links
 
 https://jonathanmumm.com/tech-it/mdns-bonjour-bible-common-service-strings-for-various-vendors/
+https://github.com/blacktop/ipsw
