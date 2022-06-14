@@ -18,7 +18,7 @@ final class ViewController: NSViewController {
     private var services: [NetService] = []
     private var browsers: [NetServiceBrowser] = []
         
-    private let servicesToBrowse = ["_companion-link._tcp.", "_rdlink._tcp.", "_airport._tcp."]
+    private let servicesToBrowse = ["_companion-link._tcp.", "_rdlink._tcp.", "_airport._tcp.", "_airplay._tcp.", "_device-info._tcp."]
     private let servicesToMonitor = ["_device-info._tcp.", "_airplay._tcp."]
 
     override func viewDidLoad() {
@@ -72,7 +72,6 @@ extension ViewController: NetServiceDelegate {
     
     private func extractModelFromTXTRecord(recordData: Data) -> String? {
         let txtDictionary = NetService.dictionary(fromTXTRecord: recordData)
-        //Check for other keys here
         guard let modelData = txtDictionary["model"], let model = String(data: modelData, encoding: .utf8) else {
             return nil
         }
