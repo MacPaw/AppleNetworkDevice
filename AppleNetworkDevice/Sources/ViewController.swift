@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import GCXMulticastDNSKit
 import Network
 
 
