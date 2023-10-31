@@ -5,5 +5,6 @@ This repository contains the prototype that demonstrates how to obtain possible 
 
 ## Links
 
+https://macpaw.tech/research/apple-local-network/
 https://jonathanmumm.com/tech-it/mdns-bonjour-bible-common-service-strings-for-various-vendors/
 https://github.com/blacktop/ipsw
