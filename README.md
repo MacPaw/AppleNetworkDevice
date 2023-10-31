@@ -1,6 +1,9 @@
 # AppleNetworkDevice
+
+>A local area network (LAN) is a computer network that interconnects computers within a limited area. Ethernet and Wi-Fi are the two most common technologies for local area networks. Each workstation in the network has its own internet protocol (IP) address, so these addresses can be utilized to distinguish devices in the network.
+
 This repository contains the prototype demonstrating how to obtain possible Apple device info from the local network by a given IP address.
-This code is the deliverable of the [article](https://macpaw.tech/research/apple-local-network/). 
+This code is the deliverable of the [article](https://macpaw.tech/research/apple-local-network/).
 
 Visit MacPaw Tech for more research: https://macpaw.tech/research/
 
